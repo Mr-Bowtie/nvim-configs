@@ -16,7 +16,7 @@ set relativenumber
 set nu
 set hidden
 set ignorecase
-set wrap
+set nowrap
 set smartcase
 set noswapfile
 set nobackup

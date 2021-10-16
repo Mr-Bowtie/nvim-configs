@@ -11,7 +11,7 @@ let g:compe.resolve_timeout = 800
 let g:compe.incomplete_delay = 400
 let g:compe.max_abbr_width = 100
 let g:compe.max_kind_width = 100
-let g:compe.max_menu_width = 100
+let g:compe.max_menu_width = 70 
 let g:compe.documentation = v:true
 
 let g:compe.source = {}

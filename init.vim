@@ -18,6 +18,12 @@ colorscheme onedark
 " writing a file
 nnoremap <leader>w :w<CR>
 
+" open help in a vertical window 
+cnoremap help vert help
+
+"run rubocop -A (autocorrect) on current file 
+nnoremap <leader>ra :!rubocop -A % <CR>
+
 " resizing windows with ALT
 nnoremap <M-j>    :resize -2<CR>
 nnoremap <M-k>    :resize +2<CR>
@@ -34,7 +40,7 @@ nnoremap <TAB> :bnext<CR>
 nnoremap <S-TAB> :bprevious<CR>
 
 " enter normal mode from terminal
-tnoremap <C-\> <C-\><C-n>
+tnoremap <leader>\ <C-\><C-n>
 " open terminal in a vertical split
 " nnoremap <leader>t <C-w>v <C-w>l :term<CR>
 
@@ -51,10 +57,12 @@ nnoremap <leader>j :m .+1<CR>==
 nnoremap <leader>k :m .-2<CR>==
 
 " split navigation 
-nnoremap <C-h> <C-w>h
-nnoremap <C-l> <C-w>l
-nnoremap <C-j> <C-w>j
-
+nnoremap <silent> <leader>h <C-W><C-H>
+nnoremap <silent> <leader>l <C-W><C-L>
+nnoremap <silent> <leader>j <C-W><C-J>
+nnoremap <silent> <leader>k <C-W><C-K>
+" delete buffer in split without losing split
+nnoremap <silent> <leader>cb :bp \| bd! #<CR>
 " Yanks the rest of the line 
 nnoremap Y y$
 nnoremap <C-k> <C-w>k
@@ -67,6 +75,12 @@ function! <SID>SynStack()
   endif
   echo map(synstack(line('.'), col('.')), 'synIDattr(v:val, "name")')
 endfunc
+
+" insert 'end' then input normal mode O
+inoremap <C-e> <CR>end<esc><S-O>
+
+
+
 
 "============================================================
 "::::::::::::::::: AUTOCOMMANDS :::::::::::::::::::::::::::::
