@@ -1,6 +1,20 @@
 
 call plug#begin('~/.local/share/nvim/plugged')
 
+" nvim-cmp and all sources
+Plug 'hrsh7th/nvim-cmp'
+Plug 'hrsh7th/cmp-nvim-lsp'
+Plug 'petertriho/cmp-git'
+Plug 'hrsh7th/cmp-path'
+Plug 'hrsh7th/cmp-buffer'
+Plug 'hrsh7th/cmp-nvim-lua'
+Plug 'f3fora/cmp-spell'
+Plug 'ray-x/cmp-treesitter'
+Plug 'hrsh7th/cmp-calc'
+Plug 'hrsh7th/cmp-nvim-lsp-document-symbol'
+Plug 'quangnguyen30192/cmp-nvim-ultisnips'
+Plug 'quangnguyen30192/cmp-nvim-tags'
+" --------------------------------
 Plug 'preservim/nerdtree'
 Plug 'steelsojka/pears.nvim'
 "Plug 'windwp/nvim-autopairs'
@@ -36,7 +50,6 @@ Plug 'gruvbox-community/gruvbox'
 Plug 'neovim/nvim-lspconfig'
 Plug 'kabouzeid/nvim-lspinstall'
 "Plug 'vim-ruby/vim-ruby'
-Plug 'hrsh7th/nvim-compe'
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 
