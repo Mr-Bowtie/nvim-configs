@@ -13,10 +13,14 @@ runtime! ./lua/mr_bowtie/*.lua
 
 let mapleader = " "
 
+
 colorscheme onedark 
 
 " writing a file
 nnoremap <leader>w :w<CR>
+
+" change CWD to current files directory
+nnoremap <C-C> :cd %:p:h<CR> 
 
 " open help in a vertical window 
 cnoremap help vert help
@@ -91,5 +95,8 @@ autocmd BufWritePost *.lua lua vim.lsp.buf.formatting_sync(nil, 100)
 
 " auto source init.vim on save
 au! BufWritePost $MYVIMRC source %
+
+" autoclose terminal after executing a command 
+autocmd TermOpen * startinsert
 
 

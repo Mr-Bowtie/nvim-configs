@@ -27,3 +27,5 @@ set termguicolors
 set scrolloff=20
 set signcolumn=yes
 set colorcolumn=80
+set guioptions+=!
+set splitbelow
