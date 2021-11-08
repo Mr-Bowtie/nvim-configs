@@ -9,40 +9,19 @@
 !_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
 !_TAG_PROGRAM_URL	https://ctags.io/	/official site/
 !_TAG_PROGRAM_VERSION	5.9.0	/p5.9.20210905.0/
-<	init.vim	/^vnoremap < <gv$/;"	m
-<C-C>	init.vim	/^nnoremap <C-C> :cd %:p:h<CR> $/;"	m
 <C-b>	plugin/spotify.vim	/^nnoremap <C-b> :SpotifyPrev<CR>$/;"	m
-<C-e>	init.vim	/^inoremap <C-e> <CR>end<esc><S-O>$/;"	m
 <C-f>	plugin/spotify.vim	/^nnoremap <C-f> :SpotifyNext<CR>$/;"	m
-<C-j>	init.vim	/^inoremap <C-j> <esc>:m .+1<CR>==A$/;"	m
-<C-k>	init.vim	/^inoremap <C-k> <esc>:m .-2<CR>==A$/;"	m
-<C-k>	init.vim	/^nnoremap <C-k> <C-w>k$/;"	m
 <C-n>	plugin/nerdtree.vim	/^nnoremap <C-n> :NERDTreeToggle<CR>$/;"	m
 <C-p>	plugin/spotify.vim	/^nnoremap <C-p> :SpotifyToggle <CR>$/;"	m
-<M-h>	init.vim	/^nnoremap <M-h>    :vertical resize -2<CR>$/;"	m
-<M-j>	init.vim	/^nnoremap <M-j>    :resize -2<CR>$/;"	m
-<M-k>	init.vim	/^nnoremap <M-k>    :resize +2<CR>$/;"	m
-<M-l>	init.vim	/^nnoremap <M-l>    :vertical resize +2<CR>$/;"	m
-<S-TAB>	init.vim	/^nnoremap <S-TAB> :bprevious<CR>$/;"	m
-<TAB>	init.vim	/^nnoremap <TAB> :bnext<CR>$/;"	m
 <leader>.	plugin/telescope.vim	/^nnoremap <leader>. :lua require('telescope.builtin').find_files({prompt_title = "< Configs >", c/;"	m
 <leader>S	plugin/spectre.vim	/^nnoremap <leader>S :lua require('spectre').open()<CR>$/;"	m
-<leader>cb	init.vim	/^nnoremap <silent> <leader>cb :bp \\| bd! #<CR>$/;"	m
 <leader>ga	plugin/fugitive.vim	/^nnoremap <leader>ga :Git add % <cr>$/;"	m
 <leader>gq	plugin/fugitive.vim	/^nnoremap <leader>gq :Git add % <bar> Git commit <cr> $/;"	m
 <leader>gs	plugin/fugitive.vim	/^nnoremap <leader>gs :Git status <CR>$/;"	m
-<leader>h	init.vim	/^nnoremap <silent> <leader>h <C-W><C-H>$/;"	m
-<leader>j	init.vim	/^nnoremap <leader>j :m .+1<CR>==$/;"	m
-<leader>j	init.vim	/^nnoremap <silent> <leader>j <C-W><C-J>$/;"	m
-<leader>k	init.vim	/^nnoremap <leader>k :m .-2<CR>==$/;"	m
-<leader>k	init.vim	/^nnoremap <silent> <leader>k <C-W><C-K>$/;"	m
-<leader>l	init.vim	/^nnoremap <silent> <leader>l <C-W><C-L>$/;"	m
-<leader>ra	init.vim	/^nnoremap <leader>ra :!rubocop -A % <CR>$/;"	m
 <leader>ra	plugin/vim_rspec.vim	/^nnoremap <leader>ra :call RunAllSpecs()<CR>$/;"	m
 <leader>rc	plugin/vim_rspec.vim	/^nnoremap <leader>rc :call RunCurrentSpecFile()<CR>$/;"	m
 <leader>rl	plugin/vim_rspec.vim	/^nnoremap <leader>rl :call RunLastSpec()<CR>$/;"	m
 <leader>rn	plugin/vim_rspec.vim	/^nnoremap <leader>rn :call RunNearestSpec()<CR>$/;"	m
-<leader>sp	init.vim	/^nmap <leader>sp :call <SID>SynStack()<CR>$/;"	m
 <leader>sw	plugin/spectre.vim	/^nnoremap <leader>sw :lua require('spectre').open_visual({select_word=true})<CR>$/;"	m
 <leader>tb	plugin/telescope.vim	/^nnoremap <leader>tb :lua require('telescope.builtin').buffers()<CR>$/;"	m
 <leader>tc	plugin/telescope.vim	/^nnoremap <leader>tc :lua require('telescope.builtin').find_files({prompt_title = "< Configs >", /;"	m
@@ -54,39 +33,11 @@
 <leader>th	plugin/telescope.vim	/^nnoremap <leader>th :lua require('telescope.builtin').help_tags()<CR>$/;"	m
 <leader>tr	plugin/telescope.vim	/^nnoremap <leader>tr :lua require('telescope.builtin').lsp_references()<CR>$/;"	m
 <leader>tws	plugin/telescope.vim	/^nnoremap <leader>tws :lua require('telescope.builtin').lsp_workspace_symbols()<CR>$/;"	m
-<leader>w	init.vim	/^nnoremap <leader>w :w<CR>$/;"	m
->	init.vim	/^vnoremap > >gv$/;"	m
-J	init.vim	/^vnoremap J :m '>+1<CR>gv=gv$/;"	m
-K	init.vim	/^vnoremap K :m '<-2<CR>gv=gv$/;"	m
 K	plugin/lsp.vim	/^nnoremap <silent> K <cmd>lua vim.lsp.buf.hover()<CR>$/;"	m
-SynStack	init.vim	/^function! <SID>SynStack()$/;"	f
-Y	init.vim	/^nnoremap Y y\$$/;"	m
+expand	lua/mr_bowtie/cmp.lua	/^        expand = function(args)$/;"	f
 g:UltiSnipsExpandTrigger	plugin/ultisnips.vim	/^let g:UltiSnipsExpandTrigger="<tab>"$/;"	v
 g:UltiSnipsJumpBackwardTrigger	plugin/ultisnips.vim	/^let g:UltiSnipsJumpBackwardTrigger="<c-z>"$/;"	v
 g:UltiSnipsJumpForwardTrigger	plugin/ultisnips.vim	/^let g:UltiSnipsJumpForwardTrigger="<c-b>"$/;"	v
-g:compe	plugin/compe.vim	/^let g:compe = {}$/;"	v
-g:compe	plugin/compe.vim	/^let g:compe.autocomplete = v:true$/;"	v
-g:compe	plugin/compe.vim	/^let g:compe.debug = v:false$/;"	v
-g:compe	plugin/compe.vim	/^let g:compe.documentation = v:true$/;"	v
-g:compe	plugin/compe.vim	/^let g:compe.enabled = v:true$/;"	v
-g:compe	plugin/compe.vim	/^let g:compe.incomplete_delay = 400$/;"	v
-g:compe	plugin/compe.vim	/^let g:compe.max_abbr_width = 100$/;"	v
-g:compe	plugin/compe.vim	/^let g:compe.max_kind_width = 100$/;"	v
-g:compe	plugin/compe.vim	/^let g:compe.max_menu_width = 70 $/;"	v
-g:compe	plugin/compe.vim	/^let g:compe.min_length = 1$/;"	v
-g:compe	plugin/compe.vim	/^let g:compe.preselect = 'enable'$/;"	v
-g:compe	plugin/compe.vim	/^let g:compe.resolve_timeout = 800$/;"	v
-g:compe	plugin/compe.vim	/^let g:compe.source = {}$/;"	v
-g:compe	plugin/compe.vim	/^let g:compe.source.buffer = v:true$/;"	v
-g:compe	plugin/compe.vim	/^let g:compe.source.calc = v:true$/;"	v
-g:compe	plugin/compe.vim	/^let g:compe.source.emoji = v:true$/;"	v
-g:compe	plugin/compe.vim	/^let g:compe.source.nvim_lsp = v:true$/;"	v
-g:compe	plugin/compe.vim	/^let g:compe.source.nvim_lua = v:true$/;"	v
-g:compe	plugin/compe.vim	/^let g:compe.source.path = v:true$/;"	v
-g:compe	plugin/compe.vim	/^let g:compe.source.spell = v:true$/;"	v
-g:compe	plugin/compe.vim	/^let g:compe.source.ultisnips = v:true$/;"	v
-g:compe	plugin/compe.vim	/^let g:compe.source_timeout = 200$/;"	v
-g:compe	plugin/compe.vim	/^let g:compe.throttle_time = 80$/;"	v
 g:rspec_command	plugin/vim_rspec.vim	/^let g:rspec_command = "vsplit | terminal rspec {spec}"$/;"	v
 g:rufo_auto_formatting	plugin/rufo.vim	/^let g:rufo_auto_formatting = 1$/;"	v
 g:sneak#label	plugin/sneak.vim	/^let g:sneak#label = 1$/;"	v
@@ -95,7 +46,6 @@ g:sneak#s_next	plugin/sneak.vim	/^let g:sneak#s_next =1$/;"	v
 g:sneak#use_ic_scs	plugin/sneak.vim	/^let g:sneak#use_ic_scs = 1$/;"	v
 gS	plugin/sneak.vim	/^map gS <Plug>Sneak_,$/;"	m
 gs	plugin/sneak.vim	/^map gs <Plug>Sneak_;$/;"	m
-help	init.vim	/^cnoremap help vert help$/;"	m
-jk	init.vim	/^inoremap jk <Esc>$/;"	m
-kj	init.vim	/^inoremap kj <Esc>$/;"	m
+map	lua/mr_bowtie/remap_template.lua	/^local function map(mode, lhs, rhs, opts)$/;"	f
 mapleader	init.vim	/^let mapleader = " "$/;"	v
+source_lua_files	init_migration.lua	/^local function source_lua_files()$/;"	f

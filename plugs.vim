@@ -1,6 +1,8 @@
 
 call plug#begin('~/.local/share/nvim/plugged')
 
+Plug 'ThePrimeagen/harpoon'
+Plug 'iamcco/markdown-preview.nvim'
 " nvim-cmp and all sources
 Plug 'hrsh7th/nvim-cmp'
 Plug 'hrsh7th/cmp-nvim-lsp'
