@@ -35,6 +35,7 @@
 <leader>tws	plugin/telescope.vim	/^nnoremap <leader>tws :lua require('telescope.builtin').lsp_workspace_symbols()<CR>$/;"	m
 K	plugin/lsp.vim	/^nnoremap <silent> K <cmd>lua vim.lsp.buf.hover()<CR>$/;"	m
 expand	lua/mr_bowtie/cmp.lua	/^        expand = function(args)$/;"	f
+format	lua/mr_bowtie/cmp.lua	/^        format = function(entry, vim_item)$/;"	f
 g:UltiSnipsExpandTrigger	plugin/ultisnips.vim	/^let g:UltiSnipsExpandTrigger="<tab>"$/;"	v
 g:UltiSnipsJumpBackwardTrigger	plugin/ultisnips.vim	/^let g:UltiSnipsJumpBackwardTrigger="<c-z>"$/;"	v
 g:UltiSnipsJumpForwardTrigger	plugin/ultisnips.vim	/^let g:UltiSnipsJumpForwardTrigger="<c-b>"$/;"	v

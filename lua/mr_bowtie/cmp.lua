@@ -29,5 +29,11 @@ cmp.setup({
         { name = 'nvim_lsp_document_symbols'},
         { name = 'ultisnips'},
         { name = 'tags'}
-    })
+    }),
+    formatting = {
+        format = function(entry, vim_item)
+            vim_item.abbr = string.sub(vim_item.abbr, 1, 30)
+            return vim_item
+        end
+    }
 })
